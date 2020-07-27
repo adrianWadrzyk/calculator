@@ -1,0 +1,13 @@
+<input type="number" [(ngModel)]="liczba1" (focus)="onFocusInput(1)">
+<br>
+<input type="number" [(ngModel)]="liczba2" (focus)="onFocusInput(2)">
+
+<button (click)="sum()">Zsumuj nas!</button>
+<button (click)="sub()">Odejmij nas!</button>
+<button (click)="mul()">Pomnóż nas!</button>
+<button (click)="div()">Podziel nas!</button>
+<div class="flex__conteiner">
+<button (click)="addToInput(number)" *ngFor = " let number of numbers" class="button">{{number}}</button>
+</div>
+<p>Suma</p>
+<p>{{output}}</p>

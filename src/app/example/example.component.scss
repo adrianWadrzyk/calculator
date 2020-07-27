@@ -1,0 +1,14 @@
+.flex__conteiner { 
+    display: flex;
+    width: 20%;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.button { 
+    width: 33.3%;
+}
+
+.button:last-child { 
+    margin-right: 33.3%;
+}
